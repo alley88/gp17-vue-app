@@ -3,6 +3,7 @@ export default {
     component:()=>import("@pages/mine"),
     name:"mine",
     meta:{
-        title:"我的"
+        title:"我的",
+        flag:true
     }
 }

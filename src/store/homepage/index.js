@@ -2,11 +2,12 @@ import http from "@utils/request.js"
 import api from "@api/index.js"
 export default {
     state:{
-        banner:[],
-        dataList:[],
-        goodsList:[],
-        promotionBanner:[],
-        recommend:[]
+        banner:localStorage.getItem("homePage")?
+        JSON.parse(localStorage.getItem("homePage")).banner : [],
+        dataList:localStorage.getItem("homePage")?JSON.parse(localStorage.getItem("homePage")).dataList :[],
+        goodsList:localStorage.getItem("homePage")?JSON.parse(localStorage.getItem("homePage")).goodsList :[],
+        promotionBanner:localStorage.getItem("homePage")?JSON.parse(localStorage.getItem("homePage")).promotionBanner :[],
+        recommend:localStorage.getItem("homePage")?JSON.parse(localStorage.getItem("homePage")).recommend :[]
     },
     mutations:{
         getHomeData(state,data){
@@ -24,6 +25,8 @@ export default {
                 url:api.home.homepage
             })
             commit("getHomeData",data)
+
+            localStorage.setItem("homePage",JSON.stringify(data.data))
         }
     },
     namespaced: true

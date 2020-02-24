@@ -3,6 +3,7 @@ export default {
     component:()=>import("@pages/classify"),
     name:"classify",
     meta:{
-        title:"分类"
+        title:"分类",
+        flag:true
     }
 }

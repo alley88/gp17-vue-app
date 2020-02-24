@@ -8,16 +8,21 @@
                 百联奥特莱斯广场
             </div>
         </div>
-        <div class="header_r">
+        <v-touch class="header_r" tag="div" @tap="handleSearch">
             <i class="iconfont">&#xe60b;</i>
-        </div>
+        </v-touch>
     </header>
 </template>
 
 
 <script>
 export default {
-    
+    name:"Header",
+    methods:{
+        handleSearch(){
+            this.$router.push("/search")
+        }
+    }
 }
 </script>
 <style>

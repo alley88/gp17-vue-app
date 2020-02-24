@@ -3,6 +3,7 @@ export default {
     component:()=>import("@pages/home"),
     name:"home",
     meta:{
-        title:"首页"
+        title:"首页",
+        flag:true
     }
 }

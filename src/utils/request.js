@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import loading from "../plugins/loading/index.js"
 const http = axios.create({
     timeout:5000,
     withCredentials:true,
@@ -11,7 +11,7 @@ http.interceptors.request.use(config=>{
         config.params = {...config.data};
     }
     //config.headers["authToken"] = store.token;
-    //加loading
+    loading.show();
 
     return config;
 },(err)=>{
@@ -23,6 +23,7 @@ http.interceptors.response.use(config=>{
     //关闭loading
 
     if(config.status == 200){
+        loading.hide();
         return config.data;
     }
 },(err)=>{
