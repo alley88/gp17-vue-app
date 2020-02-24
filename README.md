@@ -1,29 +1,16 @@
-# tiantian
+# 技术栈
+- vuex
+- axios
+- vue-lazyload
+- vue-router
+- UI框架 -->vant
+- vue-touch
+- better-scroll
+- ui组件封装
+- JS组件封装
+- vue-awesome-swiper 
 
-## Project setup
-```
-yarn install
-```
+> yarn add axios vant vue-touch@next better-scroll vue-awesome-swiper
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 项目环境
+vue-cli@3
