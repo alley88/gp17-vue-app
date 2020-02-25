@@ -1,6 +1,7 @@
 <template>
   <div class="goodsList">
-    <div v-for="(item) in dataList" :key="item.banner_ad_id">
+    <router-link v-for="(item) in dataList" :key="item.banner_ad_id"  tag="div"
+        :to="'/detail/goods/'+item.target_id">
       <div>
         <img
           :src="item.image"
@@ -11,7 +12,7 @@
         <span>￥{{item.price}}/{{item.volume}}克</span>
         <span>+</span>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 

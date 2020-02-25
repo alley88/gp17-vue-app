@@ -25,7 +25,7 @@ export default {
                     text:"首页"
                 },
                 {
-                    path:"/classify",
+                    path:"/category",
                     icon:"&#xe63f;",
                     text:"分类"
                 },

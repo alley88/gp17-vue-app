@@ -2,7 +2,10 @@
 <div>
      <SearchHeader/>
      <div class="searchlist">
-        <div class="searchlist-goodsItem" v-for="(item) in list" :key="item.id">
+        <router-link 
+            tag="div"
+            :to="'/detail/goods/'+item.id"
+            class="searchlist-goodsItem" v-for="(item) in list" :key="item.id">
             <div class="goodsPic">
                 <img v-lazy="item.photo"/>
             </div>
@@ -18,7 +21,7 @@
                <div  v-if="item.stock != 0">+</div>
             </div>
             <img class="tag-img" src="https://wap.fruitday.com/content/images/giveaway/tag-a8884d64d5.png" v-if="item.stock == 0"/>
-        </div>
+        </router-link>
     </div>
 </div>
     

@@ -204,13 +204,18 @@ export default {
   border-color: #ff8000;
   background: #ff8000;
   color: #fff;
-  width: 1.44rem;
+  width: 2rem;
   height: 0.8rem;
   margin-bottom: 0.2rem;
 }
+.detail_info .size .cur strong{
+  font-size: .16rem;
+}
+
 .detail_info .size em {
   font-style: normal;
   color: #ff8000;
+  font-size: .12rem;
 }
 /* detail_address */
 .detail_address {

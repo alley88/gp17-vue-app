@@ -8,6 +8,7 @@ import search from "./search"
 import searchList from "./searchList"
 import city from "./city"
 import detail from "./detail"
+import category from "./category"
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,7 +23,8 @@ const routes = [
   search,
   searchList,
   city,
-  detail
+  detail,
+  category
 ]
 
 const router = new VueRouter({

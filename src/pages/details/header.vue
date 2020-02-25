@@ -1,11 +1,11 @@
 <template>
     <header class="detail_header">
-        <div class="detail_header-back">
+        <v-touch tag="div" @tap="handleBack" class="detail_header-back">
             <i class="iconfont">&#xe731;</i>
-        </div>
+        </v-touch>
         <div class="detail_header-nav">
             <ul>
-                <router-link tag="li" to="/detail" >商品</router-link>
+                <router-link tag="li" to="/detail/goods" >商品</router-link>
                 <router-link tag="li" to="/detail/detail" >详情</router-link>
                 <router-link tag="li" to="/detail/evaluate" >评价</router-link>
             </ul>
@@ -16,7 +16,12 @@
 
 <script>
 export default {
-    name:"detailHeader"
+    name:"detailHeader",
+    methods: {
+        handleBack(){
+            this.$router.back();
+        }
+    },
 }
 </script>
 
