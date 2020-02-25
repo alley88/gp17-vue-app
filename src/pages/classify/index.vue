@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        classify
+        <h2>classify</h2>
     </div>
 </template>
 
@@ -10,6 +10,9 @@ export default {
 }
 </script>
 
-<style>
-    
+<style lang="scss">
+$color:red;
+h2{
+    color: $color;
+}
 </style>

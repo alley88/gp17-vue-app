@@ -6,6 +6,7 @@ import cart from "./cart"
 import mine from "./mine"
 import search from "./search"
 import searchList from "./searchList"
+import city from "./city"
 Vue.use(VueRouter)
 
 const routes = [
@@ -18,7 +19,8 @@ const routes = [
   cart,
   mine,
   search,
-  searchList
+  searchList,
+  city
 ]
 
 const router = new VueRouter({

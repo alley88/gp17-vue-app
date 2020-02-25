@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import VueTouch from "vue-touch";
 import VueLazyload from 'vue-lazyload'
+import "./common/components"
 Vue.config.productionTip = false
 Vue.use(VueTouch, {name: 'v-touch'})
 

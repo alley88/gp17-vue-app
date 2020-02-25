@@ -6,5 +6,8 @@ export default {
         hotsearch:"/v3/hotsearch",
         search:"/v3/search",
         searchList:"/v3/searchList"
+    },
+    cityList:{
+        city:"/v3/city"
     }
 }

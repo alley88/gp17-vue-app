@@ -4,9 +4,9 @@
             <div class="attr_img">
                 <img src="https://huodongjd1.fruitday.com/sale/appxx/send_to_2.png" />
             </div>
-            <div class="header_l-address">
-                百联奥特莱斯广场
-            </div>
+            <router-link to="/city" tag="div" class="header_l-address">
+                北京
+            </router-link>
         </div>
         <v-touch class="header_r" tag="div" @tap="handleSearch">
             <i class="iconfont">&#xe60b;</i>
