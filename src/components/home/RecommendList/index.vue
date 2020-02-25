@@ -1,7 +1,9 @@
 <template>
   <scroll>
     <div class="recommend_list">
-      <div
+      <router-link
+        tag="div"
+        :to="'/detail/goods/'+item.target_id"
         class="recommend_list-item"
         v-for="item in recommend"
         :key="item.target_id"
@@ -15,7 +17,7 @@
           <span>￥{{item.vip_price}}/{{item.volume}}盒子</span>
           <span>+</span>
         </div>
-      </div>
+      </router-link>
     </div>
   </scroll>
 </template>

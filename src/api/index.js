@@ -9,5 +9,9 @@ export default {
     },
     cityList:{
         city:"/v3/city"
+    },
+    goods:{
+        details:"/v3/detail",
+        comment:"/v3/comment"
     }
 }

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import homepage from "./homepage"
 import {cityApi} from "@api/request"
+import detail from "./details"
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -80,6 +81,7 @@ export default new Vuex.Store({
     }
   },
   modules: {
-    homepage
+    homepage,
+    detail
   }
 })

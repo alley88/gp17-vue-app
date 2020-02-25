@@ -10,7 +10,9 @@ export default {
     name:"scroll",
     mounted() {
         this.scroll = new BScroll(this.$refs.wrapper,{
-            scrollX:true
+            scrollX:true,
+            click:true,
+            tap:true
         });
     },
     methods:{

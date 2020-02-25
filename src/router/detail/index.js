@@ -1,0 +1,23 @@
+export default {
+    path:"/detail",
+    component:_=>import("@pages/details/index.vue"),
+    name:"detail",
+    children:[
+        {   
+            path:"goods/:product_id",
+            component:_=>import("@pages/details/goods.vue"),
+            name:"detail-goods",
+            props:true
+        },
+        {
+            path:"detail",
+            component:_=>import("@pages/details/details.vue"),
+            name:"detail-details"
+        },
+        {
+            path:"evaluate",
+            component:_=>import("@pages/details/evaluate.vue"),
+            name:"detail-evaluate"
+        }
+    ]
+}
