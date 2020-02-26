@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="detail_page">
         detail
     </div>
 </template>

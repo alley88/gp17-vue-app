@@ -10,9 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-$color:red;
-h2{
-    color: $color;
-}
+<style>
+
 </style>

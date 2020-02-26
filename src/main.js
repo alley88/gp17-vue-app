@@ -5,6 +5,7 @@ import store from './store'
 import VueTouch from "vue-touch";
 import VueLazyload from 'vue-lazyload'
 import "./common/components"
+import "./mock/index"
 Vue.config.productionTip = false
 Vue.use(VueTouch, {name: 'v-touch'})
 

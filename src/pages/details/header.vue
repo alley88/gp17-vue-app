@@ -5,7 +5,7 @@
         </v-touch>
         <div class="detail_header-nav">
             <ul>
-                <router-link tag="li" to="/detail/goods" >商品</router-link>
+                <router-link tag="li" :to="'/detail/goods/'+id" >商品</router-link>
                 <router-link tag="li" to="/detail/detail" >详情</router-link>
                 <router-link tag="li" to="/detail/evaluate" >评价</router-link>
             </ul>
@@ -17,6 +17,15 @@
 <script>
 export default {
     name:"detailHeader",
+    data(){
+        return {
+            id:"",
+        }
+    },
+    created() {
+      this.id = localStorage.getItem("product_id")  
+      console.log(this.id);
+    },
     methods: {
         handleBack(){
             this.$router.back();
@@ -35,6 +44,7 @@ export default {
     position: fixed;
     background: #fff;
     border-bottom: .01rem solid #ccc;
+    z-index:10;
 }
 
 .detail_header .detail_header-back{

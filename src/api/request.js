@@ -30,3 +30,13 @@ export const detailsCommentApi = (product_id)=>{
         url:api.goods.comment
     })
 }
+
+
+//商品评价列表
+export const detailsCommentListApi = (data)=>{
+    return http({
+        method:"get",
+        data:{...data},
+        url:api.goods.commentList
+    })
+}

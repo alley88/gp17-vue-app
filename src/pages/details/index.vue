@@ -1,9 +1,9 @@
 <template>
     <div>
         <detailHeader/>
-        <keep-alive>
-            <router-view></router-view>
-        </keep-alive>
+       
+        <router-view></router-view>
+      
     </div>
 </template>
 
@@ -20,5 +20,12 @@ export default {
 </script>
 
 <style>
-    
+.detail_page{
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    padding-top: .9rem;
+}
 </style>

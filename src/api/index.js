@@ -12,6 +12,7 @@ export default {
     },
     goods:{
         details:"/v3/detail",
-        comment:"/v3/comment"
+        comment:"/v3/comment",
+        commentList:"/v3/commentList"
     }
 }

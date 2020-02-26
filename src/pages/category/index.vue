@@ -19,7 +19,11 @@
 <script>
 import CategoryTab from "./category_tab"
 import CategoryContent from "./category_content"
+
 export default {
+    created(){
+      
+    },
     components:{
         CategoryTab,
         CategoryContent
